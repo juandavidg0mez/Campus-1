@@ -4,24 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proyecto.css">
+    <!-- <link rel="stylesheet" href="proyecto.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: 15% 10% 10% 10% 10% 20%;
+            grid-template-rows: 25% 25% 25%;
+            border-radius: 20px;
+            width: 65%;
+            gap: 5px;
+            margin: 0 auto;
+            justify-content: space-between;
+            background-color: #f29863;
+
+
+        }
+
+        .item1 {
+            padding-bottom: 20PX;
+            grid-column-start: 6;
+            grid-row-start: 2;
+
+        }
+
+        .item2 {
+            padding-left: 30%;
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+
+        .item3 {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+
+        .item4 {
+            grid-column-start: 3;
+            grid-row-start: 2;
+        }
+
+        .item5 {
+            grid-column-start: 4;
+            grid-row-start: 2;
+        }
+
+        .item6 {
+            grid-column-start: 5;
+            grid-row-start: 2;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        a:hover {
+            background: #f2e9d8;
+            transition: 0.5s;
+        }
+
+        @media (min-width:480px) and (max-width:720px) {
+            .menu {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                grid-template-rows: auto auto auto;
+                width: fit-content;
+                border-radius: 20px;
+                gap: 5px;
+                background-color: #e45300;
+
+
+            }
+
+            .item2 {
+                padding-left: 10px;
+            }
+
+            .item1 {
+                padding-top: 40px;
+                grid-column-start: -5;
+            }
+
+            .item4 {
+                padding-left: 20px;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                border-radius: 20px;
+            }
+
+            a:hover{
+                background-color: #f2e9d8;
+                transition: 0.3s;
+            }
+
+
+        }
+    </style>
     <title>Jack's Mym</title>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-
-            <ul>
-                <li class="busqueda"><a href="0"><label for="bucar">Que deseas </label>
-                        <input type="search" name="bucar" id="bucar"></a></li>
-                <li class="item1"><a href="1">¿Quines somos?</a></li>
-                <li class="item2"><a href="2">Colorimetria</a></li>
-                <li class="item3"><a href="3">Colecciones</a></li>
-                <li class="item4"><a href="4">Agenda</a></li>
-                <li class="item5"><a href="5">Problemas</a></li>
-
-            </ul>
+            <div class="item1" class="pS"><a href="1">
+                    <input type="search" name="bucar" id="bucar"></a></div>
+            <div class="item2" class="pS"><a href="2">Somos</a></div>
+            <div class="item3" class="pS"><a href="3">Colorimetria</a></div>
+            <div class="item4" class="pS"><a href="4">Colecciones</a></div>
+            <div class="item5" class="pS"><a href="5">Agenda</a></div>
+            <div class="item6" class="pS"><a href="6">Problemas</a></div>
         </nav>
     </header>
     <!-- <main>
